@@ -27,7 +27,7 @@ export default function Home() {
         {/* Motto */}
         <div className="max-w-2xl px-6">
           <p className="font-serif italic text-xl md:text-2xl text-tkb-anthracite/80 leading-relaxed">
-            "Kadının mutluluğu bir halkın huzuru, kadının özgürlüğü bir ülkenin geleceğidir."
+            &quot;Kadının mutluluğu bir halkın huzuru, kadının özgürlüğü bir ülkenin geleceğidir.&quot;
           </p>
           <p className="mt-4 font-sans text-sm font-bold tracking-widest uppercase text-tkb-anthracite/50">
             Tijen Sözeri

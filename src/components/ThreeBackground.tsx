@@ -77,10 +77,12 @@ export default function ThreeBackground() {
     window.addEventListener("resize", handleResize);
     animate();
 
+    const currentContainer = containerRef.current;
+
     return () => {
       window.removeEventListener("resize", handleResize);
-      if (containerRef.current) {
-        containerRef.current.removeChild(renderer.domElement);
+      if (currentContainer) {
+        currentContainer.removeChild(renderer.domElement);
       }
       geometry.dispose();
       material.dispose();
