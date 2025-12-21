@@ -2,6 +2,8 @@ site_name: TKB Bursa Dokümantasyon
 site_description: Türk Kadınlar Birliği Bursa Şubesi Kurumsal Web Sitesi Proje Planı
 site_author: TKB Bursa
 
+docs_dir: .
+
 theme:
   name: material
   language: tr
