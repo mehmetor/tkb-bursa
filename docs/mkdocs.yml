@@ -2,7 +2,8 @@ site_name: TKB Bursa Dokümantasyon
 site_description: Türk Kadınlar Birliği Bursa Şubesi Kurumsal Web Sitesi Proje Planı
 site_author: TKB Bursa
 
-docs_dir: .
+docs_dir: content
+site_dir: site
 
 theme:
   name: material
@@ -37,7 +38,7 @@ nav:
   - Görsel Tasarım: 03-gorsel-tasarim-ve-ui/tasarim-kilavuzu.md
   - İçerik Arşivi: 04-icerik-yonetimi-ve-arsiv/icerik-arsivi.md
   - Fonksiyonel Modüller: 05-fonksiyonel-moduller/burs-ve-uyelik-sistemleri.md
-  - Teknik Altyapı: 06-teknik-altyapi-ve-seo/teknik-kurulum-ve-seo.md
+  - Teknik Altyapi: 06-teknik-altyapi-ve-seo/teknik-kurulum-ve-seo.md
   - Proje Yönetimi: 07-proje-yonetimi-ve-takvim/uygulama-takvimi.md
 
 markdown_extensions:
@@ -52,4 +53,3 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.magiclink
-
