@@ -15,5 +15,5 @@ Bu proje, 100 yıllık bir geçmişe sahip olan TKB'nin Bursa Şubesi için mode
 *   **[Proje Yönetimi](07-proje-yonetimi-ve-takvim/uygulama-takvimi.md):** 6 haftalık uygulama takvimi.
 
 ---
-*Hazırlayan: AI Proje Asistanı*
+*Hazırlayan: [DC NEXTGEN TEKNOLOJİ](https://dcnextgen.com.tr/) *
 
