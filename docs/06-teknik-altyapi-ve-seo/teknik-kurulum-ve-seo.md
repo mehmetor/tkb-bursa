@@ -2,22 +2,22 @@
 
 Bu doküman, web sitesinin teknoloji yığınını, güvenlik standartlarını ve arama motoru optimizasyonu (SEO) planını tanımlar.
 
-## 1. İçerik Yönetim Sistemi (CMS)
+## 1. İçerik Yönetim Sistemi ve Framework
 
-*   **Platform:** WordPress (Maliyet etkinliği ve kolay yönetilebilirlik nedeniyle).
-*   **Sayfa Tasarlayıcı:** Elementor Pro veya WPBakery (Sürükle-bırak düzenleme için).
-*   **Tema:** STK/Dernek odaklı, hızlı yüklenen ve mobil uyumlu bir profesyonel tema.
+*   **Platform:** Next.js (Yüksek performans, SEO uyumluluğu ve modern teknoloji yığını nedeniyle).
+*   **Stil Kütüphanesi:** Tailwind CSS (Hızlı ve özelleştirilebilir tasarım için).
+*   **UI Bileşenleri:** HeroUI, Radix UI veya benzeri modern bileşen kütüphaneleri.
 
-## 2. Tavsiye Edilen Eklentiler (Plugins)
+## 2. Tavsiye Edilen Teknolojiler ve Bağımlılıklar
 
-| Fonksiyon | Tavsiye Edilen Eklenti |
+| Fonksiyon | Tavsiye Edilen Çözüm |
 | :--- | :--- |
-| **SEO** | Yoast SEO veya Rank Math |
-| **Güvenlik** | Wordfence Security |
-| **Hız/Cache** | WP Rocket veya LiteSpeed Cache |
-| **Formlar** | WPForms veya Contact Form 7 |
-| **Erişilebilirlik** | One Click Accessibility |
-| **Yedekleme** | UpdraftPlus |
+| **SEO** | next-seo veya Metadata API |
+| **Güvenlik** | NextAuth.js / Middleware |
+| **İçerik Yönetimi** | Strapi, Contentful veya Markdown tabanlı yönetim |
+| **Formlar** | React Hook Form + Zod |
+| **Erişilebilirlik** | Radix UI Primitives |
+| **Dağıtım** | Railway / Vercel |
 
 ## 3. Alan Adı ve Hosting (Barındırma)
 

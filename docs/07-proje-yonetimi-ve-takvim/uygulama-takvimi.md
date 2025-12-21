@@ -6,7 +6,7 @@ Bu doküman, web sitesinin hayata geçirilmesi için gereken zaman çizelgesini 
 
 ### Hafta 1: Altyapı ve Hazırlık
 *   Domain ve hosting alımı.
-*   WordPress ve temel eklentilerin kurulumu.
+*   Next.js kurulumu ve kütüphanelerin eklenmesi.
 *   Kurumsal e-posta adreslerinin oluşturulması.
 
 ### Hafta 2: İçerik Toplama ve Dijitalleştirme
@@ -26,7 +26,7 @@ Bu doküman, web sitesinin hayata geçirilmesi için gereken zaman çizelgesini 
 
 ### Hafta 5: SEO, Güvenlik ve İçerik Kontrolü
 *   Tüm sayfaların SEO ayarlarının yapılması.
-*   Güvenlik eklentilerinin yapılandırılması.
+*   Güvenlik katmanlarının ve middleware yapılandırmasının yapılması.
 *   Hız testleri ve son içerik düzeltmeleri.
 
 ### Hafta 6: Final Testler ve Lansman
