@@ -1,6 +1,25 @@
 import ThreeBackground from "@/components/ThreeBackground";
 
 export default function Home() {
+  const isMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true";
+
+  if (isMaintenanceMode) {
+    return <MaintenanceView />;
+  }
+
+  return (
+    <div className="flex min-h-screen flex-col items-center justify-center p-8 text-center">
+      <h1 className="font-serif text-4xl text-tkb-anthracite">
+        TKB Bursa Şubesi - Hoş Geldiniz
+      </h1>
+      <p className="mt-4 text-tkb-anthracite/60">
+        Gerçek site içeriği burada geliştirilmeye devam edilecek.
+      </p>
+    </div>
+  );
+}
+
+function MaintenanceView() {
   return (
     <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4">
       {/* Background Animation */}
@@ -50,11 +69,11 @@ export default function Home() {
           </div>
         </div>
 
-        {/* 100th Year Badge (Optional Idea) */}
+        {/* 100th Year Badge */}
         <div className="pt-8">
           <div className="flex flex-col items-center opacity-40 text-xs ">
             <span className="text-tkb-anthracite/50">Kuruluş</span>
-            <span className="uppercase text-tkb-anthracite">
+            <span className="uppercase text-tkb-anthracite font-bold tracking-widest">
               1924
             </span>
           </div>
