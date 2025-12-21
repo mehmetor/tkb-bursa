@@ -27,10 +27,14 @@ export default function Home() {
         {/* Motto */}
         <div className="max-w-2xl px-6">
           <p className="font-serif italic text-xl md:text-2xl text-tkb-anthracite/80 leading-relaxed">
-            &quot;Kadının mutluluğu bir halkın huzuru, kadının özgürlüğü bir ülkenin geleceğidir.&quot;
+            &quot;Kadının mutluluğu bir halkın huzuru, kadının özgürlüğü bir
+            ülkenin geleceğidir.&quot;
           </p>
-          <p className="mt-4 font-sans text-sm font-bold tracking-widest uppercase text-tkb-anthracite/50">
-            Tijen Sözeri
+          <p className="mt-4 font-sans text-sm  text-tkb-anthracite/50">
+            <span className="font-bold uppercase tracking-widest">
+              Tijen Sözeri
+            </span>
+            , Yönetim Kurulu Başkanı
           </p>
         </div>
 
@@ -42,21 +46,25 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-tkb-anthracite font-bold">
             <span className="text-2xl font-serif">8 Mart 2026</span>
             <span className="hidden md:inline text-tkb-gold">|</span>
-            <span className="text-lg tracking-wider">tkbbursa.org</span>
+            <span className="text-lg tracking-wider">tkbbursa.org.tr</span>
           </div>
         </div>
 
         {/* 100th Year Badge (Optional Idea) */}
         <div className="pt-8">
-          <div className="flex flex-col items-center opacity-40">
-            <span className="text-xs tracking-[0.5em] uppercase text-tkb-anthracite">Est. 1924</span>
+          <div className="flex flex-col items-center opacity-40 text-xs ">
+            <span className="text-tkb-anthracite/50">Kuruluş</span>
+            <span className="uppercase text-tkb-anthracite">
+              1924
+            </span>
           </div>
         </div>
       </div>
 
       {/* Footer / Copyright */}
       <footer className="absolute bottom-8 left-0 w-full text-center text-tkb-anthracite/40 text-xs font-sans">
-        &copy; {new Date().getFullYear()} TKB Bursa Şubesi. Tüm Hakları Saklıdır.
+        &copy; {new Date().getFullYear()} TKB Bursa Şubesi. Tüm Hakları
+        Saklıdır.
       </footer>
     </main>
   );
