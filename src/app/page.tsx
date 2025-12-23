@@ -1,3 +1,4 @@
+import Image from "next/image";
 import ThreeBackground from "@/components/ThreeBackground";
 
 export default function Home() {
@@ -25,7 +26,7 @@ function MaintenanceView() {
       {/* Background Animation */}
       <ThreeBackground />
 
-      <div className="z-10 flex max-w-4xl flex-col items-center text-center space-y-12">
+      <div className="z-10 flex max-w-4xl flex-col items-center text-center space-y-8">
         {/* Badge */}
         <div className="inline-flex items-center rounded-full border border-tkb-gold/30 bg-tkb-gold/5 px-4 py-1.5 text-sm font-medium text-tkb-gold backdrop-blur-sm animate-pulse">
           <span className="mr-2 h-2 w-2 rounded-full bg-tkb-gold"></span>
@@ -57,20 +58,36 @@ function MaintenanceView() {
           </p>
         </div>
 
-        {/* Launch Info */}
-        <div className="space-y-4">
-          <p className="text-tkb-anthracite/60 font-sans tracking-wide">
-            Yeni dijital yuvamızda buluşmak üzere.
-          </p>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 text-tkb-anthracite font-bold">
-            <span className="text-2xl font-serif">8 Mart 2026</span>
-            <span className="hidden md:inline text-tkb-gold">|</span>
-            <span className="text-lg tracking-wider">tkbbursa.org.tr</span>
+        {/* Launch Info & Logo Section */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
+          {/* Logo */}
+          <div className="relative w-24 h-24 md:w-28 md:h-28">
+            <Image
+              src="/logo.png"
+              alt="TKB Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </div>
+          
+          {/* Launch Info */}
+          <div className="space-y-4 text-center md:text-left">
+            <p className="text-tkb-anthracite/60 font-sans tracking-wide">
+              Yeni dijital yuvamızda buluşmak üzere.
+            </p>
+            <div className="flex flex-col md:flex-row items-center justify-center md:justify-start gap-4 text-tkb-anthracite font-bold">
+              <span className="text-2xl font-serif">8 Mart 2026</span>
+              <span className="hidden md:inline text-tkb-gold">|</span>
+              <span className="text-lg tracking-wider">tkbbursa.org.tr</span>
+            </div>
+          </div>
+
+          
         </div>
 
         {/* 100th Year Badge */}
-        <div className="pt-8">
+        <div className="">
           <div className="flex flex-col items-center opacity-40 text-xs ">
             <span className="text-tkb-anthracite/50">Kuruluş</span>
             <span className="uppercase text-tkb-anthracite font-bold tracking-widest">
