@@ -19,8 +19,7 @@
     },
     "dev": {
       "cache": false,
-      "persistent": true,
-      "env": ["NEXT_PUBLIC_*"]
+      "persistent": true
     }
   }
 }
