@@ -1,5 +1,5 @@
 site_name: TKB Bursa Dokümantasyon
-site_description: Türk Kadınlar Birliği Bursa Şubesi Kurumsal Web Sitesi Proje Planı
+site_description: Türk Kadınlar Birliği Bursa - Kurumsal Web Sitesi Proje Planı
 site_author: TKB Bursa
 
 docs_dir: content
@@ -30,17 +30,16 @@ theme:
     - content.code.copy
 
 nav:
-  - Ana Sayfa: index.md
-  - Referans:
-      - Ana Strateji Raporu: 00-referans/ana-strateji-raporu.md
+  - Genel Bakış: index.md
+  - Proje Yönetimi: 07-proje-yonetimi-ve-takvim/uygulama-takvimi.md
   - Strateji ve Analiz: 01-strateji-ve-analiz/vizyon-ve-hedef-kitle.md
   - Bilgi Mimarisi: 02-bilgi-mimarisi-ve-ux/site-haritasi-ve-navigasyon.md
-  - Görsel Tasarım: 03-gorsel-tasarim-ve-ui/tasarim-kilavuzu.md
+  - Görsel Tasarım: 03-gorsel-tasarim-ve-ui/tasarim-kilavuzu-v2.md
   - İçerik Arşivi: 04-icerik-yonetimi-ve-arsiv/icerik-arsivi.md
   - Fonksiyonel Modüller: 05-fonksiyonel-moduller/burs-ve-uyelik-sistemleri.md
   - Teknik Altyapi: 06-teknik-altyapi-ve-seo/teknik-kurulum-ve-seo.md
-  - Proje Yönetimi: 07-proje-yonetimi-ve-takvim/uygulama-takvimi.md
-
+  - Referans:
+      - Ana Strateji Raporu: 00-referans/ana-strateji-raporu.md
 markdown_extensions:
   - tables
   - admonition

@@ -10,6 +10,10 @@
     "db:generate": {
       "cache": false
     },
+    "db:push": {
+      "cache": false,
+      "env": ["DATABASE_URL"]
+    },
     "start": {
       "cache": false,
       "persistent": true

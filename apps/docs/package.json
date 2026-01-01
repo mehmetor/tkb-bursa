@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "mkdocs serve",
-    "build": "mkdocs build"
+    "setup": "python3 -m venv venv && ./venv/bin/pip install -r requirements.txt",
+    "dev": "./venv/bin/mkdocs serve",
+    "build": "./venv/bin/mkdocs build"
   }
 }
 
