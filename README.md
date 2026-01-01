@@ -14,7 +14,7 @@ Monorepo yapısı [Turborepo](https://turbo.build/) kullanılarak yönetilmekted
 ## 🚀 Teknolojiler
 
 - **Frontend:** Next.js 16 (App Router), React 19, Tailwind CSS 4, HeroUI v3 (Alpha).
-- **Admin Panel:** Refine.dev, Ant Design.
+- **Admin Panel:** Refine.dev, Mantine v7.
 - **Veritabanı:** PostgreSQL, Prisma ORM.
 - **Hosting/Deployment:** Railway.
 - **Paket Yönetimi:** npm (Workspaces).
@@ -25,22 +25,33 @@ Projeyi yerel makinenizde çalıştırmak için:
 
 1. **Bağımlılıkları Yükleyin:**
    ```bash
+   # Node.js bağımlılıkları için:
    npm install
+
+   # Dokümantasyon (MkDocs) için:
+   cd apps/docs
+   npm run setup
+   cd ../..
    ```
 
-2. **Veritabanı İstemcisini Oluşturun:**
+2. **Veritabanı İşlemleri (Prisma):**
    ```bash
+   # Prisma istemcisini (client) oluşturmak için:
    npx turbo run db:generate
+
+   # Şema değişikliklerini veritabanına yansıtmak (migration) için:
+   npx turbo run db:push
    ```
 
 3. **Geliştirme Sunucusunu Başlatın:**
    ```bash
-   # Tüm uygulamaları başlatmak için:
+   # Tüm uygulamaları (Website, Admin, Docs) başlatmak için:
    npx turbo run dev
 
    # Sadece belirli bir uygulamayı başlatmak için:
    npx turbo run dev --filter=@tkb/website
    npx turbo run dev --filter=@tkb/admin
+   npx turbo run dev --filter=@tkb/docs
    ```
 
 Uygulamalar varsayılan olarak şu portlarda çalışır:
