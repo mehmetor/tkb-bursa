@@ -1,0 +1,31 @@
+{
+  "name": "@tkb/admin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start -p 3001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@refinedev/core": "latest",
+    "@refinedev/nextjs-router": "latest",
+    "@refinedev/simple-rest": "latest",
+    "@refinedev/kbar": "latest",
+    "@refinedev/antd": "latest",
+    "@tkb/db": "*",
+    "next": "16.1.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "lucide-react": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5",
+    "tailwindcss": "^4"
+  }
+}
+

@@ -1,0 +1,45 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model BursBasvuru {
+  id              String   @id @default(cuid())
+  ad              String
+  soyad           String
+  tcNo            String
+  telefon         String
+  eposta          String
+  universite      String
+  bolum           String
+  sinif           String
+  ogrenciBelgesi  String   // Dosya yolu veya URL
+  transkript      String   // Dosya yolu veya URL
+  gelirBeyani     String   // Dosya yolu veya URL
+  kvkkOnay        Boolean  @default(false)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  durum           String   @default("BEKLEMEDE") // BEKLEMEDE, ONAYLANDI, REDDEDİLDİ
+}
+
+model UyelikBasvuru {
+  id        String   @id @default(cuid())
+  ad        String
+  soyad     String
+  telefon   String
+  eposta    String
+  meslek    String?
+  notlar    String?
+  kvkkOnay  Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  durum     String   @default("BEKLEMEDE") // BEKLEMEDE, INCELENIYOR, ONAYLANDI, REDDEDİLDİ
+}
+
