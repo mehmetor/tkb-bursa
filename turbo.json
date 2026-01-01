@@ -1,8 +1,10 @@
 {
   "$schema": "https://turbo.build/schema.json",
+  "globalEnv": ["NODE_ENV"],
   "tasks": {
     "build": {
-      "dependsOn": ["^build"],
+      "dependsOn": ["^build", "db:generate"],
+      "env": ["NEXT_PUBLIC_*", "DATABASE_URL"],
       "outputs": [".next/**", "dist/**"]
     },
     "db:generate": {
