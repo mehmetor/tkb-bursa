@@ -9,6 +9,8 @@ import ThreeBackground from "@/components/ThreeBackground";
 export default function Home() {
   const isMaintenanceMode = process.env.NEXT_PUBLIC_MAINTENANCE_MODE === "true";
 
+  console.log("Maintenance Mode:", process.env.NEXT_PUBLIC_MAINTENANCE_MODE);
+
   if (isMaintenanceMode) {
     return <MaintenanceView />;
   }
@@ -150,7 +152,7 @@ export default function Home() {
 
 function MaintenanceView() {
   return (
-    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 bg-tkb-surface">
+    <main className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4">
       <ThreeBackground />
 
       <div className="z-10 flex max-w-4xl flex-col items-center text-center space-y-12">
@@ -204,7 +206,7 @@ function MaintenanceView() {
           transition={{ delay: 1 }}
           className="flex flex-col md:flex-row items-center gap-12"
         >
-          <div className="relative w-20 h-20 grayscale brightness-110 opacity-80">
+          <div className="relative w-20 h-20">
             <Image src="/logo.png" alt="TKB Logo" fill className="object-contain" priority />
           </div>
           
