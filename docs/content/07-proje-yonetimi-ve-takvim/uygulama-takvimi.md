@@ -1,40 +1,65 @@
 # Proje Yönetimi ve Takvim: Uygulama Yol Haritası
 
-Bu doküman, web sitesinin hayata geçirilmesi için gereken zaman çizelgesini ve görev dağılımını içerir. Toplam süre: **6 Hafta**.
+Bu doküman, Türk Kadınlar Birliği (TKB) Bursa Şubesi web sitesinin hayata geçirilmesi için gereken detaylı zaman çizelgesini, teknik backlog'u ve uygulama adımlarını içerir. Toplam süre: **6 Hafta**.
 
-## 1. Zaman Çizelgesi (6 Haftalık Plan)
+## 1. Genişletilmiş Uygulama Takvimi
 
-### Hafta 1: Altyapı ve Hazırlık
-*   Domain ve hosting alımı.
-*   Next.js kurulumu ve kütüphanelerin eklenmesi.
-*   Kurumsal e-posta adreslerinin oluşturulması.
+### Hafta 1: Temel Kurulum ve Tasarım Sistemi
+- **Teknik:** Next.js projesinin yapılandırılması, Tailwind CSS v4 ve HeroUI entegrasyonu.
+- **Tasarım:** Tasarım kılavuzu uyarınca CSS değişkenlerinin (oklch) tanımlanması, Google Fonts (Playfair Display, Roboto) kurulumu.
+- **Dokümantasyon:** Proje yapısının README.md'ye işlenmesi.
 
-### Hafta 2: İçerik Toplama ve Dijitalleştirme
-*   `docs/04-icerik-yonetimi-ve-arsiv/` belgesindeki hazır metinlerin sisteme girişi.
-*   Fotoğraf arşivinin ayıklanması ve optimize edilmesi.
-*   Tüzük ve yönetim kurulu bilgilerinin güncellenmesi.
+### Hafta 2: Bilgi Mimarisi ve İçerik Altyapısı
+- **Navigasyon:** Site haritası doğrultusunda Layout ve Navbar yapısının kurulması.
+- **CMS:** Markdown tabanlı içerik yönetim sisteminin (haberler, etkinlikler) kurgulanması.
+- **İçerik:** Arşivdeki ilk haberlerin sisteme aktarılması.
 
-### Hafta 3: Tasarım ve Arayüz Uygulama
-*   Renk paleti ve tipografinin siteye uygulanması.
-*   Anasayfa (Hero Slider, Sayaçlar vb.) tasarımı.
-*   Mobil uyumluluk testleri.
+### Hafta 3: Ana Sayfa Tasarımı ve Uygulama
+- **Bileşenler:** Hero Slider, Sayaç Modülü, Başkanın Mesajı, Etkinlik Takvimi grid yapısı.
+- **Görsel:** "Modern Klasik" üsluba uygun Hero alanının tasarımı.
+- **Responsive:** Mobil öncelikli (Mobile-first) arayüz geliştirme.
 
-### Hafta 4: Fonksiyonel Modül Kurulumları
-*   Burs başvuru formunun oluşturulması ve test edilmesi.
-*   Üyelik formu ve iletişim kanallarının entegrasyonu.
-*   Google Haritalar ve sosyal medya bağlantıları.
+### Hafta 4: Fonksiyonel Modüller (Burs ve Üyelik)
+- **Burs Sistemi:** Başvuru formu, dosya yükleme (validation: Zod), başarılı/hata durumları.
+- **Üyelik:** Ön başvuru formu ve e-posta tetikleyici (Next.js API routes).
+- **Hukuki:** KVKK açık rıza metinleri ve çerez politikası entegrasyonu.
 
-### Hafta 5: SEO, Güvenlik ve İçerik Kontrolü
-*   Tüm sayfaların SEO ayarlarının yapılması.
-*   Güvenlik katmanlarının ve middleware yapılandırmasının yapılması.
-*   Hız testleri ve son içerik düzeltmeleri.
+### Hafta 5: SEO, Performans ve Güvenlik
+- **SEO:** Metadata API yapılandırması, OpenGraph görselleri, Sitemap üretimi.
+- **Performans:** Görsel optimizasyonu (Next/Image), Core Web Vitals testleri.
+- **Güvenlik:** Form güvenliği (CSRF), middleware yapılandırması.
 
-### Hafta 6: Final Testler ve Lansman
-*   Farklı cihazlarda (iOS, Android, Windows) son kontroller.
-*   Yönetim kuruluna CMS eğitiminin verilmesi.
-*   **Lansman:** Belirlenen özel bir günde yayına giriş.
+### Hafta 6: Final Kontroller ve Yayına Alım
+- **Test:** BrowserStack veya manuel cihaz testleri.
+- **Yayına Alım:** Vercel/Railway dağıtımı (Deployment).
+- **Eğitim:** Yönetim için basit içerik giriş dokümantasyonu.
 
-## 2. Proje Kontrol Listesi (Checklist)
+## 2. Ürün Backlog (Categorized)
+
+### [INFRA] Altyapı
+- [x] Next.js + Tailwind v4 + HeroUI Setup
+- [x] Font & Color Token Configuration
+- [ ] Markdown Content Fetching Logic
+
+### [UI/UX] Arayüz
+- [x] Global Layout & Navigation
+- [x] Home Page: Hero Section
+- [x] Home Page: Counter Module
+- [x] Home Page: News/Events Feed
+- [ ] Interaktif Tarihçe (Zaman Tüneli)
+
+### [FUNC] Fonksiyonel
+- [ ] Burs Başvuru Portalı ve Form Validasyonu
+- [ ] Üyelik Ön Başvuru Formu
+- [ ] İletişim Formu & Google Maps Entegrasyonu
+- [ ] E-Bülten Kayıt (Mailchimp/Sendinblue)
+
+### [SEO] Görünürlük
+- [ ] Semantic HTML Audit
+- [ ] Dynamic Meta Tags per Page
+- [ ] Google Search Console Setup
+
+## 3. Proje Kontrol Listesi (Checklist)
 
 - [ ] Domain & Hosting Aktif mi?
 - [ ] SSL Sertifikası (HTTPS) yüklü mü?
@@ -44,8 +69,7 @@ Bu doküman, web sitesinin hayata geçirilmesi için gereken zaman çizelgesini 
 - [ ] KVKK metinleri onay kutucukları eklendi mi?
 - [ ] Google Search Console kaydı yapıldı mı?
 
-## 3. Sorumluluk Matrisi
+## 4. Sorumluluk Matrisi
 *   **Proje Yöneticisi:** Genel koordinasyon ve onay.
 *   **İçerik Editörü:** Haber girişi ve fotoğraf yönetimi.
 *   **Teknik Destek:** Sunucu yönetimi ve güvenlik.
-

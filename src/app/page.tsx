@@ -36,8 +36,8 @@ export default function Home() {
                 Geleceğe <br />
                 <span className="text-tkb-red font-bold">Yürüyoruz.</span>
               </h1>
-              <p className="text-tkb-dark/70 font-sans max-w-xl text-xl md:text-2xl leading-relaxed mb-12">
-                Türkiye'nin en köklü kadın örgütlenmesi olarak, 100 yıldır çağdaşlık ve eşitlik yolunda kararlılıkla ilerliyoruz.
+              <p className="text-tkb-dark/70 font-serif max-w-xl text-xl md:text-2xl leading-relaxed mb-12">
+                Türkiye'nin en köklü kadın örgütlenmesi olarak, <br /><span className="font-sans">100</span> yıldır çağdaşlık ve eşitlik yolunda kararlılıkla ilerliyoruz.
               </p>
               <div className="flex flex-wrap gap-8">
                 <button className="px-10 py-5 bg-tkb-red text-white font-mono text-sm tracking-widest uppercase hover:bg-tkb-dark transition-colors duration-300">
